@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Nav from './components/Nav.js';
 import './App.css';
+import HomePageCarousel from './components/HomePageCarousel.js';
+import HomePage from './components/HomePage.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Hello test test, Raina has made a change.
-        </a>
-      </header>
+        <div>
+          <Nav />
+        </div>
+        <div>
+          <HomePageCarousel />
+        </div>
+        <div>
+            <HomePage />
+        </div>
     </div>
   );
 }

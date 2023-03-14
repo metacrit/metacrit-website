@@ -2,37 +2,119 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item {
+  margin-left: 2rem;
+  font-size: medium;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .nav-item:hover{
+  color: aliceblue;
+} */
+
+#mainNav {
+  padding: 1.4% 0% 1.4%;
+  background-color: #1b1d47;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo {
+  margin-right: 55%;
+  margin-left: 5%;
+}
+
+.homephotos {
+  height: 795px;
+}
+
+.homephotodesc {
+  font-size: large;
+}
+
+#card1 {
+  width: 250px;
+  background: rgb(145, 145, 145);
+  opacity: .8;
+  margin-left: 547px;
+}
+
+.HomeSlogan {
+  padding-top: 3.5rem;
+  padding-bottom: 10%;
+}
+
+.HomePageBox1 {
+  display: inline-block;
+  background-color: black;
+  width: 25%;
+  padding-bottom: 7%;
+}
+
+.HomePageBox1Desc {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:left;
+  padding-left: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.HomePageBox1Header {
+  display: flex;
+  justify-content: left;
+  padding-left: 24%;
+  padding-bottom: 7%;
+  padding-top: 32%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomePageBox2 {
+  display: inline-block;
+  background-color: grey;
+  width: 25%;
+  padding-bottom: 4.5%;
+  
+}
+
+.HomePageBox2Desc {
+  display: flex;
+  justify-content:left;
+  padding-left: 26%;
+}
+
+.HomePageBox2Header {
+  display: flex;
+  justify-content: left;
+  padding-left: 26%;
+  padding-bottom: 7%;
+  padding-top: 32%;
+}
+
+.CarouselBox {
+  
+  margin-right: 1400px;
+  background-color: green;
+  width: 600px;
+  opacity: 60%; 
+}
+
+.CarouselCaption {
+  
+}
+
+.CarouselSubCaption {
+  padding-right: 70%;
+}
+
+.CarouselBtn {
+  padding-right:70%;
+}
+
+.ContactForm {
+  padding-left: 500px;
+  padding-bottom: 100px;
+  display: inline-block;
+}
+
+.ContactName {
+  width: 18rem;
+}
+
+.Child1 {
+  display: inline-block;
+  
 }
