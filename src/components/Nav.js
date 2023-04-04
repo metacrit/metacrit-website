@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -11,18 +11,26 @@ function Nav() {
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">PROJECTS</a>
-        </li>
+        <Link to="/">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
+            </li>
+        </Link>
+        <Link to="projects">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">PROJECTS</a>
+            </li>
+        </Link>
+        <Link to="clientservices">
         <li class="nav-item">
           <a class="nav-link text-light" href="#">CLIENT SERVICES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">ABOUT</a>
-        </li>
+        </Link>
+        <Link to="about">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">ABOUT</a>
+          </li>
+        </Link>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">CONTACT</a>
         </li>

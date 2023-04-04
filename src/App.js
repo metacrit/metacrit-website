@@ -1,21 +1,26 @@
-import Nav from './components/Nav.js';
 import './App.css';
-import HomePageCarousel from './components/HomePageCarousel.js';
-import HomePage from './components/HomePage.js';
+import Nav from './components/Nav';
+import HomePage from './components/HomePage';
+import Projects from './components/Projects';
+import About from './components/About';
+import ClientServices from './components/ClientServices';
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
-        <div>
+    <Router>
+      <div>
           <Nav />
-        </div>
-        <div>
-          <HomePageCarousel />
-        </div>
-        <div>
-            <HomePage />
-        </div>
-    </div>
+          <Routes>
+              <Route path="/" exact element={<HomePage />} />
+              <Route path="/projects" exact element={<Projects />} />
+              <Route path="/about" exact element={<About />} />
+              <Route path="/clientservices" exact element={<ClientServices />} />
+          </Routes>
+      </div>
+    </Router>
   );
 }
 
